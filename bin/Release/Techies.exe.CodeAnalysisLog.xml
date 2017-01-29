@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\bin\Release\Techies.exe">
+   <Modules>
+    <Module Name="techies.exe">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'Techies.exe' with a strong name key.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Mark 'Techies.exe' with CLSCompliant(true) because it exposes externally visible types.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="Techies">
+       <Types>
+        <Type Name="Bootstrap" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#PrintOnLoadMessage()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="Ensage.Game.PrintMessage(System.String,Ensage.MessageType)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies" File="Bootstrap.cs" Line="61">Method 'Bootstrap.PrintOnLoadMessage()' passes a literal string as parameter 'message' of a call to 'Game.PrintMessage(string, MessageType)'. Retrieve the following string(s) from a resource table instead: "#Techies &lt;font color=\'#00ff00\'&gt;loaded&lt;/font&gt;!".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Techies.Classes">
+       <Types>
+        <Type Name="LandMine" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="LandMine" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+           <Issue Name="TypeShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'LandMine' in type name 'LandMine' exists as a discrete term. If your usage is intended to be single word, case it as 'Landmine'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#.ctor(Ensage.Entity)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="LandMine.cs" Line="27">In externally visible method 'LandMine.LandMine(Entity)', validate parameter 'entity' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Distance(SharpDX.Vector3)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="v" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="LandMine.cs" Line="147">In method 'LandMine.Distance(Vector3)', consider providing a more meaningful name than parameter name 'v'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RemoteMine" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(Ensage.Ability,Ensage.Entity)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="1" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="RemoteMine.cs" Line="30">In externally visible method 'RemoteMine.RemoteMine(Ability, Entity)', validate parameter 'entity' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Distance(SharpDX.Vector3)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="v" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="RemoteMine.cs" Line="165">In method 'RemoteMine.Distance(Vector3)', consider providing a more meaningful name than parameter name 'v'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Stack" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+           <Issue Name="TypeNoAlternate" Certainty="95" Level="CriticalError">Rename type name 'Stack' so that it does not end in 'Stack'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#.ctor(SharpDX.Vector3)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Ensage.Drawing.MeasureText(System.String,System.String,SharpDX.Vector2,Ensage.FontFlags)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="74">Method 'Stack.Stack(Vector3)' passes a literal string as parameter 'text' of a call to 'Drawing.MeasureText(string, string, Vector2, FontFlags)'. Retrieve the following string(s) from a resource table instead: "DETONATE!".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="77">Method 'Stack.Stack(Vector3)' passes a literal string as parameter 'text' of a call to 'Drawing.MeasureText(string, string, Vector2, FontFlags)'. Retrieve the following string(s) from a resource table instead: "StackDamage: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="76">Method 'Stack.Stack(Vector3)' passes a literal string as parameter 'text' of a call to 'Drawing.MeasureText(string, string, Vector2, FontFlags)'. Retrieve the following string(s) from a resource table instead: "[AUTO DETONATE]".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="75">Method 'Stack.Stack(Vector3)' passes a literal string as parameter 'text' of a call to 'Drawing.MeasureText(string, string, Vector2, FontFlags)'. Retrieve the following string(s) from a resource table instead: "x".</Issue>
+            </Message>
+            <Message Id="StackDamage" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="77">Correct the spelling of the unrecognized token 'StackDamage' in the literal '"StackDamage: "'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Drawing_OnDraw(System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="312">'Stack.Drawing_OnDraw(EventArgs)' has a cyclomatic complexity of 26. Rewrite or refactor the method to reduce complexity to 25.</Issue>
+            </Message>
+            <Message Id="Ensage.Drawing.DrawText(System.String,SharpDX.Vector2,SharpDX.Vector2,SharpDX.Color,Ensage.FontFlags)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="374">Method 'Stack.Drawing_OnDraw(EventArgs)' passes a literal string as parameter 'text' of a call to 'Drawing.DrawText(string, Vector2, Vector2, Color, FontFlags)'. Retrieve the following string(s) from a resource table instead: " AUTO DETONATE".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="349">Method 'Stack.Drawing_OnDraw(EventArgs)' passes a literal string as parameter 'text' of a call to 'Drawing.DrawText(string, Vector2, Vector2, Color, FontFlags)'. Retrieve the following string(s) from a resource table instead: "*".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="464">Method 'Stack.Drawing_OnDraw(EventArgs)' passes a literal string as parameter 'text' of a call to 'Drawing.DrawText(string, Vector2, Vector2, Color, FontFlags)'. Retrieve the following string(s) from a resource table instead: "DETONATE!".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="568">Method 'Stack.Drawing_OnDraw(EventArgs)' passes a literal string as parameter 'text' of a call to 'Drawing.DrawText(string, Vector2, Vector2, Color, FontFlags)'. Retrieve the following string(s) from a resource table instead: "Kill atleast ,  enemies (click to toggle)".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="405">Method 'Stack.Drawing_OnDraw(EventArgs)' passes a literal string as parameter 'text' of a call to 'Drawing.DrawText(string, Vector2, Vector2, Color, FontFlags)'. Retrieve the following string(s) from a resource table instead: "StackDamage: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="543">Method 'Stack.Drawing_OnDraw(EventArgs)' passes a literal string as parameter 'text' of a call to 'Drawing.DrawText(string, Vector2, Vector2, Color, FontFlags)'. Retrieve the following string(s) from a resource table instead: "[AUTO DETONATE]".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="507">Method 'Stack.Drawing_OnDraw(EventArgs)' passes a literal string as parameter 'text' of a call to 'Drawing.DrawText(string, Vector2, Vector2, Color, FontFlags)'. Retrieve the following string(s) from a resource table instead: "x".</Issue>
+            </Message>
+            <Message Id="StackDamage" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="405">Correct the spelling of the unrecognized token 'StackDamage' in the literal '"StackDamage: "'.</Issue>
+            </Message>
+            <Message Id="atleast" TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="568">Correct the spelling of the unrecognized token 'atleast' in the literal '"Kill atleast "'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Game_OnWndProc(Ensage.WndEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="689">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Stack.Game_OnWndProc(WndEventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="710">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Stack.Game_OnWndProc(WndEventArgs)' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LandMineCount" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="LandMine" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="128">The compound word 'LandMine' in member name 'Stack.LandMineCount' exists as a discrete term. If your usage is intended to be single word, case it as 'Landmine' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_LandMineCount()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="NonBreaking">
+               <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="136">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Stack.LandMineCount.get()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#LandMineCountTextSize" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="LandMine" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="147">The compound word 'LandMine' in member name 'Stack.LandMineCountTextSize' exists as a discrete term. If your usage is intended to be single word, case it as 'Landmine' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LandMines" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="167">Change 'Stack.LandMines' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message Id="LandMines" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="167">The compound word 'LandMines' in member name 'Stack.LandMines' exists as a discrete term. If your usage is intended to be single word, case it as 'Landmines' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="167">Change 'List&lt;LandMine&gt;' in 'Stack.LandMines' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RemoteMineCount" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_RemoteMineCount()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="NonBreaking">
+               <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="198">Because the behavior of 'int.ToString()' could vary based on the current user's locale settings, replace this call in 'Stack.RemoteMineCount.get()' with a call to 'int.ToString(IFormatProvider)'. If the result of 'int.ToString(IFormatProvider)' will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#RemoteMines" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="229">Change 'Stack.RemoteMines' to be read-only by removing the property setter.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="229">Change 'List&lt;RemoteMine&gt;' in 'Stack.RemoteMines' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ScreenPosition" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Accessors>
+            <Accessor Name="#get_ScreenPosition()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="CriticalError" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="Stack.cs" Line="258">Modify 'Stack.ScreenPosition.get()' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="StasisTrap" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Position" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Accessors>
+            <Accessor Name="#get_Position()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+             <Messages>
+              <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="NonBreaking">
+               <Issue Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Classes" File="StasisTrap.cs" Line="49">'StasisTrap.Position.get()' appears to have no upstream public or protected callers.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Techies.Modules.HurricanePike">
+       <Types>
+        <Type Name="HurricanePikeCombo" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Execute(Ensage.Hero)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Error" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Modules\HurricanePike" File="HurricanePikeCombo.cs" Line="127">Replace method 'HurricanePikeCombo.Execute(Hero)' with an overload that supplies all default arguments.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Techies.Modules.RemoteMines">
+       <Types>
+        <Type Name="AutoDetonateCreeps" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Execute(Ensage.Hero)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Modules\RemoteMines" File="AutoDetonateCreeps.cs" Line="69">'AutoDetonateCreeps.Execute(Hero)' has a cyclomatic complexity of 27. Rewrite or refactor the method to reduce complexity to 25.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Notification" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor(System.Single,SharpDX.Vector2,SharpDX.Vector2)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Ensage.Common.Objects.DrawObjects.DrawText.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Modules\RemoteMines" File="Notification.cs" Line="97">Method 'Notification.Notification(float, Vector2, Vector2)' passes a literal string as parameter 'value' of a call to 'DrawText.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "DETONATE".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Modules\RemoteMines" File="Notification.cs" Line="107">Method 'Notification.Notification(float, Vector2, Vector2)' passes a literal string as parameter 'value' of a call to 'DrawText.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "MOVE CAMERA".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#alliesNearbySleeper" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">It appears that field 'Notification.alliesNearbySleeper' is never used or is only ever assigned to. Use this field or remove it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Click(SharpDX.Vector2)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="mousePosition" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Modules\RemoteMines" File="Notification.cs" Line="199">Parameter 'mousePosition' of 'Notification.Click(Vector2)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Draw()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Ensage.Common.Objects.DrawObjects.DrawText.set_Text(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Modules\RemoteMines" File="Notification.cs" Line="316">Method 'Notification.Draw()' passes a literal string as parameter 'value' of a call to 'DrawText.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "/".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Modules\RemoteMines" File="Notification.cs" Line="361">Method 'Notification.Draw()' passes a literal string as parameter 'value' of a call to 'DrawText.Text.set(string)'. Retrieve the following string(s) from a resource table instead: "Press \', \' to detonate".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PopUp(Ensage.Unit)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="PopUp" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Modules\RemoteMines" File="Notification.cs" Line="412">The compound word 'PopUp' in member name 'Notification.PopUp(Unit)' exists as a discrete term. If your usage is intended to be single word, case it as 'Popup' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Techies.Utility">
+       <Types>
+        <Type Name="Damage" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Game_OnUpdate(System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="Damage.cs" Line="186">'Damage.Game_OnUpdate(EventArgs)' has a cyclomatic complexity of 28. Rewrite or refactor the method to reduce complexity to 25.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DrawingUtils" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Utils" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Utils' in type name 'DrawingUtils'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#DrawLandMineNumber(System.UInt32,System.Single,System.Double,System.Double,System.Boolean,Ensage.Hero)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="LandMine" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="47">The compound word 'LandMine' in member name 'DrawingUtils.DrawLandMineNumber(uint, float, double, double, bool, Hero)' exists as a discrete term. If your usage is intended to be single word, case it as 'Landmine' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="sizey" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="47">In method 'DrawingUtils.DrawLandMineNumber(uint, float, double, double, bool, Hero)', correct the spelling of 'sizey' in parameter name 'sizey' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="47">In method 'DrawingUtils.DrawLandMineNumber(uint, float, double, double, bool, Hero)', consider providing a more meaningful name than parameter name 'x'.</Issue>
+            </Message>
+            <Message Id="hero" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="47">Parameter 'hero' of 'DrawingUtils.DrawLandMineNumber(uint, float, double, double, bool, Hero)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DrawRemoteMineNumber(System.UInt32,System.Single,System.Double,System.Double,System.Double,System.Boolean,Ensage.Hero)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="sizey" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="95">In method 'DrawingUtils.DrawRemoteMineNumber(uint, float, double, double, double, bool, Hero)', correct the spelling of 'sizey' in parameter name 'sizey' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="95">In method 'DrawingUtils.DrawRemoteMineNumber(uint, float, double, double, double, bool, Hero)', consider providing a more meaningful name than parameter name 'x'.</Issue>
+            </Message>
+            <Message Id="hero" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="95">Parameter 'hero' of 'DrawingUtils.DrawRemoteMineNumber(uint, float, double, double, double, bool, Hero)' is never used. Remove the parameter or use it in the method body.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DrawSuicide(System.UInt32,System.Single,System.Double,System.Double,System.Double,System.Boolean,Ensage.Unit)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Ensage.Drawing.DrawText(System.String,SharpDX.Vector2,SharpDX.Vector2,SharpDX.Color,Ensage.FontFlags)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="185">Method 'DrawingUtils.DrawSuicide(uint, float, double, double, double, bool, Unit)' passes a literal string as parameter 'text' of a call to 'Drawing.DrawText(string, Vector2, Vector2, Color, FontFlags)'. Retrieve the following string(s) from a resource table instead: "No , Yes".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="156">Method 'DrawingUtils.DrawSuicide(uint, float, double, double, double, bool, Unit)' passes a literal string as parameter 'text' of a call to 'Drawing.DrawText(string, Vector2, Vector2, Color, FontFlags)'. Retrieve the following string(s) from a resource table instead: "No, Yes".</Issue>
+            </Message>
+            <Message Id="Ensage.Drawing.MeasureText(System.String,System.String,SharpDX.Vector2,Ensage.FontFlags)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="183">Method 'DrawingUtils.DrawSuicide(uint, float, double, double, double, bool, Unit)' passes a literal string as parameter 'text' of a call to 'Drawing.MeasureText(string, string, Vector2, FontFlags)'. Retrieve the following string(s) from a resource table instead: "No , Yes".</Issue>
+            </Message>
+            <Message Id="sizey" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="143">In method 'DrawingUtils.DrawSuicide(uint, float, double, double, double, bool, Unit)', correct the spelling of 'sizey' in parameter name 'sizey' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="143">In method 'DrawingUtils.DrawSuicide(uint, float, double, double, double, bool, Unit)', consider providing a more meaningful name than parameter name 'x'.</Issue>
+            </Message>
+            <Message Id="6" TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="164">In externally visible method 'DrawingUtils.DrawSuicide(uint, float, double, double, double, bool, Unit)', validate parameter 'hero' before using it.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RoundedRectangle(System.Single,System.Single,System.Single,System.Single,System.Int32,SharpDX.Color)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="h" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="215">In method 'DrawingUtils.RoundedRectangle(float, float, float, float, int, Color)', consider providing a more meaningful name than parameter name 'h'.</Issue>
+            </Message>
+            <Message Id="i" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="215">In method 'DrawingUtils.RoundedRectangle(float, float, float, float, int, Color)', correct the spelling of 'i' in parameter name 'iSmooth' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="w" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="215">In method 'DrawingUtils.RoundedRectangle(float, float, float, float, int, Color)', consider providing a more meaningful name than parameter name 'w'.</Issue>
+            </Message>
+            <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="215">In method 'DrawingUtils.RoundedRectangle(float, float, float, float, int, Color)', consider providing a more meaningful name than parameter name 'x'.</Issue>
+            </Message>
+            <Message Id="y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="215">In method 'DrawingUtils.RoundedRectangle(float, float, float, float, int, Color)', consider providing a more meaningful name than parameter name 'y'.</Issue>
+            </Message>
+            <Message Id="iSmooth*2" TypeName="OperationsShouldNotOverflow" Category="Microsoft.Usage" CheckId="CA2233" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="CriticalWarning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="232">Correct the potential overflow in the operation 'iSmooth*2' in 'DrawingUtils.RoundedRectangle(float, float, float, float, int, Color)'.</Issue>
+             <Issue Certainty="75" Level="CriticalWarning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="DrawingUtils.cs" Line="234">Correct the potential overflow in the operation 'iSmooth*2' in 'DrawingUtils.RoundedRectangle(float, float, float, float, int, Color)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Extensions" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#GetStackDamage(Ensage.Unit,System.Single)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidExcessiveClassCoupling" Category="Microsoft.Maintainability" CheckId="CA1506" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="Breaking">
+             <Issue Name="Method" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="Extensions.cs" Line="38">'Extensions.GetStackDamage(this Unit, float)' is coupled with 36 different types from 14 different namespaces. Rewrite or refactor the method to decrease its class coupling, or consider moving the method to one of the other types it is tightly coupled with. A class coupling above 40 indicates poor maintainability, a class coupling between 40 and 30 indicates moderate maintainability, and a class coupling below 30 indicates good maintainability.</Issue>
+            </Message>
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="CriticalWarning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="Extensions.cs" Line="38">'Extensions.GetStackDamage(this Unit, float)' has a cyclomatic complexity of 63. Rewrite or refactor the method to reduce complexity to 25.</Issue>
+            </Message>
+            <Message TypeName="AvoidUnmaintainableCode" Category="Microsoft.Maintainability" CheckId="CA1505" Status="Active" Created="2017-01-29 13:24:29Z" FixCategory="NonBreaking">
+             <Issue Name="Method" Certainty="75" Level="Warning" Path="C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\Utility" File="Extensions.cs" Line="38">'Extensions.GetStackDamage(this Unit, float)' has a maintainability index of 19. Rewrite or refactor the method to increase its maintainability index (MI). An MI below 10 indicates poor maintainability, an MI between 10 and 20 indicates moderate maintainability, and an MI above 20 indicates good maintainability.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidExcessiveClassCoupling" Category="Microsoft.Maintainability" CheckId="CA1506">
+   <Name>Avoid excessive class coupling</Name>
+   <Description>Types and methods with a high degree of class coupling can be difficult to maintain.</Description>
+   <Resolution Name="Method">{0} is coupled with {1} different types from {2} different namespaces. Rewrite or refactor the method to decrease its class coupling, or consider moving the method to one of the other types it is tightly coupled with. A class coupling above {3} indicates poor maintainability, a class coupling between {3} and {4} indicates moderate maintainability, and a class coupling below {4} indicates good maintainability.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb397994.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502">
+   <Name>Avoid excessive complexity</Name>
+   <Description>Method implementations that are exceedingly complex increase the challenge of understanding and maintaining code.</Description>
+   <Resolution Name="Default">{0} has a cyclomatic complexity of {1}. Rewrite or refactor the method to reduce complexity to {2}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182212.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+   <Name>Avoid uncalled private code</Name>
+   <Description>There is uncalled code that is not externally visible and is not a known runtime entry point. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182264.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnmaintainableCode" Category="Microsoft.Maintainability" CheckId="CA1505">
+   <Name>Avoid unmaintainable code</Name>
+   <Description>Types and methods with a high degree of class coupling, cyclomatic complexity and/or program length can be difficult to maintain.</Description>
+   <Resolution Name="Method">{0} has a maintainability index of {1}. Rewrite or refactor the method to increase its maintainability index (MI). An MI below {2} indicates poor maintainability, an MI between {2} and {3} indicates moderate maintainability, and an MI above {3} indicates good maintainability.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb386043.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>Avoid unused private fields</Name>
+   <Description>Private fields were detected that do not appear to be accessed within the assembly. If this violation fires in error, please send a problem report to the Visual Studio Code Analysis team.</Description>
+   <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245042.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227">
+   <Name>Collection properties should be read only</Name>
+   <Description>Properties that return collections should be read-only so that users cannot entirely replace the backing store. Users can still modify the contents of the collection by calling relevant methods on the collection. Note that the XmlSerializer class has special support for deserializing read-only collections. See the XmlSerializer overview for more information.</Description>
+   <Resolution Name="Default">Change {0} to be read-only by removing the property setter.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182327.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+   <Name>Compound words should be cased correctly</Name>
+   <Description>Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'.</Description>
+   <Resolution Name="MemberShouldBeDiscreteTerm">The compound word '{0}' in member name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}' or strip the first token entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="TypeShouldBeDiscreteTerm">The compound word '{0}' in type name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264474.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="80">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DefaultParametersShouldNotBeUsed" Category="Microsoft.Design" CheckId="CA1026">
+   <Name>Default parameters should not be used</Name>
+   <Description>Some programming languages do not support default parameters. Replace default parameters with method overloads that supply the default argument.</Description>
+   <Resolution Name="Default">Replace method {0} with an overload that supplies all default arguments.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182135.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>Do not pass literals as localized parameters</Name>
+   <Description>Literal strings that are embedded in source code are difficult to localize. Avoid passing literal strings as arguments in circumstances where a localized string is generally expected.</Description>
+   <Resolution Name="KnownValue">Method {0} passes a literal string as parameter '{1}' of a call to {2}. Retrieve the following string(s) from a resource table instead: {3}.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+   <Name>Do not catch general exception types</Name>
+   <Description>You should not catch Exception or SystemException. Catching generic exception types can hide run-time problems from the library user, and can complicate debugging. You should catch only those exceptions that you can handle gracefully.</Description>
+   <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182137.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+   <Name>Do not expose generic lists</Name>
+   <Description>Do not expose List&lt;T&gt; in object models. Use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt; instead. List&lt;T&gt; is meant to be used from implementation, not in object model API. List&lt;T&gt; is optimized for performance at the cost of long term versioning. For example, if you return List&lt;T&gt; to the client code, you will not ever be able to receive notifications when client code modifies the collection.</Description>
+   <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182142.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="MemberParameter">In method {0}, correct the spelling of '{1}' in parameter name {2} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="MemberParameterMoreMeaningfulName">In method {0}, consider providing a more meaningful name than parameter name {1}.</Resolution>
+   <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264492.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711">
+   <Name>Identifiers should not have incorrect suffix</Name>
+   <Description>Types that do not extend certain base types should not use reserved name suffixes. Types and members should not use 'Ex' or 'New' to distinguish them from an earlier version of the same API, instead, use a numeric suffix such as '2' or provide a more meaningful suffix. Concrete type implementations and members should not end 'Impl'. Members instead, should either consider using the suggested alternate 'Core' in replacement of 'Impl' or avoid any suffix at all.</Description>
+   <Resolution Name="TypeNoAlternate">Rename type name {0} so that it does not end in '{1}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182247.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Literals should be spelled correctly" Category="Microsoft.Naming" CheckId="CA2204">
+   <Name>Literals should be spelled correctly</Name>
+   <Description>This rule parses the literal string into words, tokenizing compound words, and checks the spelling of each word/token.</Description>
+   <Resolution Name="Default">Correct the spelling of the unrecognized token '{0}' in the literal '{1}'.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/bb264488.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Mark assemblies with CLSCompliantAttribute</Name>
+   <Description>Assemblies should explicitly state their CLS compliance using the CLSCompliant attribute. An assembly without this attribute is not CLS-compliant. Assemblies, modules, and types can be CLS-compliant even if some parts of the assembly, module, or type are not CLS-compliant. The following rules apply: 1) If the element is marked CLSCompliant, any noncompliant members must have the CLSCompliant attribute present with its argument set to false. 2) A comparable CLS-compliant alternative member must be supplied for each member that is not CLS-compliant.</Description>
+   <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="OperationsShouldNotOverflow" Category="Microsoft.Usage" CheckId="CA2233">
+   <Name>Operations should not overflow</Name>
+   <Description>Arithmetic operations should not be done without first validating the operands to prevent overflow.</Description>
+   <Resolution Name="Default">Correct the potential overflow in the operation '{0}' in {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182354.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+   <Name>Review unused parameters</Name>
+   <Description>Review parameters in non-virtual methods that are not used in the method body to ensure no correctness exists around failure to access them. Unused parameters incur maintenance and performance costs. Sometimes a violation of this rule can point to an implementation bug in the method (i.e. the parameter should actually have been used in the method body). Exclude warnings of this rule if the parameter has to exist because of backward compatibility.</Description>
+   <Resolution Name="Default">Parameter {0} of {1} is never used. Remove the parameter or use it in the method body.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182268.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Specify IFormatProvider</Name>
+   <Description>If an overload exists that takes an IFormatProvider argument, it should always be called in favor of an overload that does not. Some methods in the runtime convert a value to or from a string representation and take a string parameter that contains one or more characters, called format specifiers, which indicate how the value is to be converted. If the meaning of the format specifier varies by culture, a formatting object supplies the actual characters used in the string representation. In scenarios where sorting and comparison behavior should never change between cultures, specify CultureInfo.InvariantCulture, otherwise, specify CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternateString">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify {3} as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Validate arguments of public methods" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>Validate arguments of public methods</Name>
+   <Description>All reference arguments passed to externally visible methods should be checked against null (Nothing in VB). If appropriate, throw a System.ArgumentNullException when the argument is null.</Description>
+   <Resolution Name="Default">In externally visible method {0}, validate parameter '{1}' before using it.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182182.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

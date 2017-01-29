@@ -1,0 +1,15 @@
+C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\bin\Release\Techies.exe.config
+C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\bin\Release\Techies.XML
+C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\bin\Release\Techies.exe
+C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\bin\Release\Techies.pdb
+C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\bin\Release\Techies.exe.CodeAnalysisLog.xml
+C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\bin\Release\Techies.exe.lastcodeanalysissucceeded
+C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\bin\Release\Ensage.Common.dll
+C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\bin\Release\Ensage.dll
+C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\bin\Release\SharpDX.Direct3D9.dll
+C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\bin\Release\SharpDX.dll
+C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\bin\Release\Newtonsoft.Json.dll
+C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\bin\Release\Ensage.Common.pdb
+C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\obj\Debug\techies.csprojResolveAssemblyReference.cache
+C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\obj\Debug\Techies.exe
+C:\Users\NinjaVit\Desktop\EnsageSharp-master\Techies\obj\Debug\Techies.pdb

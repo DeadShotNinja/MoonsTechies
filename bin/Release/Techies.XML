@@ -1,0 +1,1734 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Techies</name>
+    </assembly>
+    <members>
+        <member name="T:Techies.Bootstrap">
+            <summary>
+                The bootstrap.
+            </summary>
+        </member>
+        <member name="M:Techies.Bootstrap.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:Techies.Bootstrap" /> class.
+            </summary>
+        </member>
+        <member name="P:Techies.Bootstrap.Techies">
+            <summary>
+                Gets or sets the techies.
+            </summary>
+        </member>
+        <member name="M:Techies.Bootstrap.PrintOnLoadMessage">
+            <summary>
+                The print on load message.
+            </summary>
+        </member>
+        <member name="T:Techies.Classes.LandMine">
+            <summary>
+                The land mine.
+            </summary>
+        </member>
+        <member name="M:Techies.Classes.LandMine.#ctor(Ensage.Entity)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Techies.Classes.LandMine" /> class.
+            </summary>
+            <param name="entity">
+                The land mine entity.
+            </param>
+        </member>
+        <member name="P:Techies.Classes.LandMine.Damage">
+            <summary>
+                Gets or sets the damage.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.LandMine.Entity">
+            <summary>
+                Gets or sets the entity.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.LandMine.Handle">
+            <summary>
+                Gets or sets the handle.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.LandMine.Level">
+            <summary>
+                Gets or sets the level.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.LandMine.Position">
+            <summary>
+                Gets or sets the position.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.LandMine.Radius">
+            <summary>
+                Gets or sets the radius.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.LandMine.RangeDisplay">
+            <summary>
+                Gets or sets the range display.
+            </summary>
+        </member>
+        <member name="M:Techies.Classes.LandMine.CreateRangeDisplay">
+            <summary>
+                The create range display.
+            </summary>
+        </member>
+        <member name="M:Techies.Classes.LandMine.Delete">
+            <summary>
+                The delete.
+            </summary>
+        </member>
+        <member name="M:Techies.Classes.LandMine.Distance(SharpDX.Vector3)">
+            <summary>
+                The distance.
+            </summary>
+            <param name="v">
+                The v.
+            </param>
+            <returns>
+                The <see cref="T:System.Single" />.
+            </returns>
+        </member>
+        <member name="T:Techies.Classes.StasisTrap">
+            <summary>
+                The stasis trap.
+            </summary>
+        </member>
+        <member name="M:Techies.Classes.StasisTrap.#ctor(Ensage.Entity)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Techies.Classes.StasisTrap" /> class.
+            </summary>
+            <param name="entity">
+                The entity.
+            </param>
+        </member>
+        <member name="P:Techies.Classes.StasisTrap.Entity">
+            <summary>
+                Gets or sets the entity.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.StasisTrap.Handle">
+            <summary>
+                Gets or sets the handle.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.StasisTrap.Position">
+            <summary>
+                Gets or sets the position.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.StasisTrap.Radius">
+            <summary>
+                Gets or sets the radius.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.StasisTrap.RangeDisplay">
+            <summary>
+                Gets or sets the range display.
+            </summary>
+        </member>
+        <member name="M:Techies.Classes.StasisTrap.CreateRangeDisplay">
+            <summary>
+                The create range display.
+            </summary>
+        </member>
+        <member name="M:Techies.Classes.StasisTrap.Delete">
+            <summary>
+                The delete.
+            </summary>
+        </member>
+        <member name="T:Techies.Classes.RemoteMine">
+            <summary>
+                The remote mine.
+            </summary>
+        </member>
+        <member name="M:Techies.Classes.RemoteMine.#ctor(Ensage.Ability,Ensage.Entity)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Techies.Classes.RemoteMine" /> class.
+            </summary>
+            <param name="ability">
+                The ability.
+            </param>
+            <param name="entity">
+                The entity.
+            </param>
+        </member>
+        <member name="P:Techies.Classes.RemoteMine.Damage">
+            <summary>
+                Gets or sets the damage.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.RemoteMine.DetonateAbility">
+            <summary>
+                Gets or sets the detonate ability.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.RemoteMine.Entity">
+            <summary>
+                Gets or sets the entity.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.RemoteMine.Handle">
+            <summary>
+                Gets or sets the handle.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.RemoteMine.Level">
+            <summary>
+                Gets or sets the level.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.RemoteMine.Position">
+            <summary>
+                Gets or sets the position.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.RemoteMine.Radius">
+            <summary>
+                Gets or sets the radius.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.RemoteMine.RangeDisplay">
+            <summary>
+                Gets or sets the range display.
+            </summary>
+        </member>
+        <member name="M:Techies.Classes.RemoteMine.CreateRangeDisplay">
+            <summary>
+                The create range display.
+            </summary>
+        </member>
+        <member name="M:Techies.Classes.RemoteMine.Delete">
+            <summary>
+                The delete.
+            </summary>
+        </member>
+        <member name="M:Techies.Classes.RemoteMine.Detonate">
+            <summary>
+                The detonate.
+            </summary>
+        </member>
+        <member name="M:Techies.Classes.RemoteMine.Distance(SharpDX.Vector3)">
+            <summary>
+                The distance.
+            </summary>
+            <param name="v">
+                The v.
+            </param>
+            <returns>
+                The <see cref="T:System.Single" />.
+            </returns>
+        </member>
+        <member name="T:Techies.Classes.Stack">
+            <summary>
+                The stack.
+            </summary>
+        </member>
+        <member name="F:Techies.Classes.Stack.landMineCount">
+            <summary>
+                The land mine count.
+            </summary>
+        </member>
+        <member name="F:Techies.Classes.Stack.landMineCountTextSize">
+            <summary>
+                The land mine count text size.
+            </summary>
+        </member>
+        <member name="F:Techies.Classes.Stack.remoteMineCount">
+            <summary>
+                The remote mine count.
+            </summary>
+        </member>
+        <member name="F:Techies.Classes.Stack.remoteMineCountTextSize">
+            <summary>
+                The remote mine count text size.
+            </summary>
+        </member>
+        <member name="F:Techies.Classes.Stack.screenPosition">
+            <summary>
+                The screen position.
+            </summary>
+        </member>
+        <member name="M:Techies.Classes.Stack.#ctor(SharpDX.Vector3)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Techies.Classes.Stack" /> class.
+            </summary>
+            <param name="position">
+                The position.
+            </param>
+        </member>
+        <member name="M:Techies.Classes.Stack.Finalize">
+            <summary>
+                Finalizes an instance of the <see cref="T:Techies.Classes.Stack" /> class.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.Stack.AutoDetonate">
+            <summary>
+                Gets or sets a value indicating whether auto detonate.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.Stack.AutoDetonateTextSize">
+            <summary>
+                Gets or sets the auto detonate text size.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.Stack.DetonateTextSize">
+            <summary>
+                Gets or sets the detonate text size.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.Stack.Id">
+            <summary>
+                Gets or sets the id.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.Stack.LandMineCount">
+            <summary>
+                Gets the land mine count.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.Stack.LandMineCountTextSize">
+            <summary>
+                Gets the land mine count text size.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.Stack.LandMines">
+            <summary>
+                Gets or sets the land mines.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.Stack.MinEnemiesKill">
+            <summary>
+                Gets or sets the min enemies kill.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.Stack.Position">
+            <summary>
+                Gets or sets the position.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.Stack.RawDamage">
+            <summary>
+                Gets or sets the raw damage.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.Stack.RemoteMineCount">
+            <summary>
+                Gets the remote mine count.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.Stack.RemoteMineCountTextSize">
+            <summary>
+                Gets the remote mine count text size.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.Stack.RemoteMines">
+            <summary>
+                Gets or sets the remote mines.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.Stack.ScreenPosition">
+            <summary>
+                Gets the screen position.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.Stack.StackDamageTextSize">
+            <summary>
+                Gets or sets the stack damage text size.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.Stack.Visible">
+            <summary>
+                Gets or sets a value indicating whether visible.
+            </summary>
+        </member>
+        <member name="P:Techies.Classes.Stack.XTextSize">
+            <summary>
+                Gets or sets the x text size.
+            </summary>
+        </member>
+        <member name="M:Techies.Classes.Stack.Delete">
+            <summary>
+                The delete.
+            </summary>
+        </member>
+        <member name="M:Techies.Classes.Stack.Drawing_OnDraw(System.EventArgs)">
+            <summary>
+                The drawing_ on draw.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="M:Techies.Classes.Stack.Game_OnWndProc(Ensage.WndEventArgs)">
+            <summary>
+                The game_ on wnd proc.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="M:Techies.Classes.Stack.OnUpdate(System.EventArgs)">
+            <summary>
+                The on update.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="T:Techies.Modules.HurricanePike.HurricanePikeCombo">
+            <summary>
+                The hurricane pike combo.
+            </summary>
+        </member>
+        <member name="F:Techies.Modules.HurricanePike.HurricanePikeCombo.PushRange">
+            <summary>
+                The push range.
+            </summary>
+        </member>
+        <member name="F:Techies.Modules.HurricanePike.HurricanePikeCombo.comboSleeper">
+            <summary>
+                The combo sleeper.
+            </summary>
+        </member>
+        <member name="F:Techies.Modules.HurricanePike.HurricanePikeCombo.findSleeper">
+            <summary>
+                The find sleeper.
+            </summary>
+        </member>
+        <member name="F:Techies.Modules.HurricanePike.HurricanePikeCombo.blinkDagger">
+            <summary>
+                The blink.
+            </summary>
+        </member>
+        <member name="F:Techies.Modules.HurricanePike.HurricanePikeCombo.hurricanePike">
+            <summary>
+                The hurricane pike.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.HurricanePike.HurricanePikeCombo.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:Techies.Modules.HurricanePike.HurricanePikeCombo" /> class.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.HurricanePike.HurricanePikeCombo.CanBeExecuted">
+            <summary>
+                The can be executed.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.HurricanePike.HurricanePikeCombo.CanDraw">
+            <summary>
+                The can draw.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.HurricanePike.HurricanePikeCombo.Draw">
+            <summary>
+                The draw.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.HurricanePike.HurricanePikeCombo.Execute(Ensage.Hero)">
+            <summary>
+                The execute.
+            </summary>
+            <param name="hero">
+                The hero.
+            </param>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.HurricanePike.HurricanePikeCombo.IsHeroLoop">
+            <summary>
+                The is hero loop.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.HurricanePike.HurricanePikeCombo.OnClose">
+            <summary>
+                The on close.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.HurricanePike.HurricanePikeCombo.OnLoad">
+            <summary>
+                The on load.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.HurricanePike.HurricanePikeCombo.OnWndProc(Ensage.WndEventArgs)">
+            <summary>
+                The on wnd proc.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="M:Techies.Modules.HurricanePike.HurricanePikeCombo.GetNearestStackToPush(Ensage.Unit,SharpDX.Vector3)">
+            <summary>
+                The get nearest stack to kill.
+            </summary>
+            <param name="hero">
+                The hero.
+            </param>
+            <param name="predict">
+                The predict.
+            </param>
+            <returns>
+                The <see cref="T:Techies.Classes.Stack" />.
+            </returns>
+        </member>
+        <member name="T:Techies.Modules.LandMines.ManageLandMines">
+            <summary>
+                The manage land mines.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.LandMines.ManageLandMines.CanBeExecuted">
+            <summary>
+                The can be executed.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.LandMines.ManageLandMines.CanDraw">
+            <summary>
+                The can draw.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.LandMines.ManageLandMines.Draw">
+            <summary>
+                The draw.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.LandMines.ManageLandMines.Execute(Ensage.Hero)">
+            <summary>
+                The execute.
+            </summary>
+            <param name="hero">
+                The hero.
+            </param>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.LandMines.ManageLandMines.IsHeroLoop">
+            <summary>
+                The is hero loop.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.LandMines.ManageLandMines.OnClose">
+            <summary>
+                The on close.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.LandMines.ManageLandMines.OnLoad">
+            <summary>
+                The on load.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.LandMines.ManageLandMines.OnWndProc(Ensage.WndEventArgs)">
+            <summary>
+                The on wnd proc.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="M:Techies.Modules.LandMines.ManageLandMines.ObjectMgr_OnAddEntity(Ensage.EntityEventArgs)">
+            <summary>
+                The object manager on add entity.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="M:Techies.Modules.LandMines.ManageLandMines.ObjectMgr_OnRemoveEntity(Ensage.EntityEventArgs)">
+            <summary>
+                The object manager on remove entity.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="T:Techies.Modules.RemoteMines.AutoDetonateCreeps">
+            <summary>
+                The auto detonate creeps.
+            </summary>
+        </member>
+        <member name="F:Techies.Modules.RemoteMines.AutoDetonateCreeps.creeps">
+            <summary>
+                The creeps.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateCreeps.CanBeExecuted">
+            <summary>
+                The can be executed.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateCreeps.CanDraw">
+            <summary>
+                The can draw.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateCreeps.Draw">
+            <summary>
+                The draw.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateCreeps.Execute(Ensage.Hero)">
+            <summary>
+                The execute.
+            </summary>
+            <param name="hero">
+                The hero.
+            </param>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateCreeps.IsHeroLoop">
+            <summary>
+                The is hero loop.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateCreeps.OnClose">
+            <summary>
+                The on close.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateCreeps.OnLoad">
+            <summary>
+                The on load.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateCreeps.OnWndProc(Ensage.WndEventArgs)">
+            <summary>
+                The on wnd proc.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateCreeps.Detonate(System.Collections.Generic.IEnumerable{Techies.Classes.RemoteMine})">
+            <summary>
+                The detonate.
+            </summary>
+            <param name="remoteMines">
+                The remote mines.
+            </param>
+        </member>
+        <member name="T:Techies.Modules.RemoteMines.AutoDetonateHeroes">
+            <summary>
+                The auto detonate heroes.
+            </summary>
+        </member>
+        <member name="F:Techies.Modules.RemoteMines.AutoDetonateHeroes.notification">
+            <summary>
+                The notification.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateHeroes.CanBeExecuted">
+            <summary>
+                The can be executed.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateHeroes.CanDraw">
+            <summary>
+                The can draw.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateHeroes.Draw">
+            <summary>
+                The draw.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateHeroes.Execute(Ensage.Hero)">
+            <summary>
+                The execute.
+            </summary>
+            <param name="hero">
+                The hero.
+            </param>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateHeroes.IsHeroLoop">
+            <summary>
+                The is hero loop.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateHeroes.OnClose">
+            <summary>
+                The on close.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateHeroes.OnLoad">
+            <summary>
+                The on load.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateHeroes.OnWndProc(Ensage.WndEventArgs)">
+            <summary>
+                The on wnd proc.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoDetonateHeroes.Detonate(System.Collections.Generic.IEnumerable{Techies.Classes.RemoteMine})">
+            <summary>
+                The detonate.
+            </summary>
+            <param name="remoteMines">
+                The remote mines.
+            </param>
+        </member>
+        <member name="T:Techies.Modules.RemoteMines.AutoProtection">
+            <summary>
+                The protection.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoProtection.CanBeExecuted">
+            <summary>
+                The can be executed.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoProtection.CanDraw">
+            <summary>
+                The can draw.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoProtection.Draw">
+            <summary>
+                The draw.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoProtection.Execute(Ensage.Hero)">
+            <summary>
+                The execute.
+            </summary>
+            <param name="hero">
+                The hero.
+            </param>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoProtection.IsHeroLoop">
+            <summary>
+                The is hero loop.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoProtection.OnClose">
+            <summary>
+                The on close.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoProtection.OnLoad">
+            <summary>
+                The on load.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.AutoProtection.OnWndProc(Ensage.WndEventArgs)">
+            <summary>
+                The on wnd proc.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="T:Techies.Modules.RemoteMines.Notification">
+            <summary>
+                The notification.
+            </summary>
+        </member>
+        <member name="F:Techies.Modules.RemoteMines.Notification.alliesNearbySleeper">
+            <summary>
+                The allies nearby sleeper.
+            </summary>
+        </member>
+        <member name="F:Techies.Modules.RemoteMines.Notification.chargeText">
+            <summary>
+                The charge text.
+            </summary>
+        </member>
+        <member name="F:Techies.Modules.RemoteMines.Notification.healthText">
+            <summary>
+                The health text.
+            </summary>
+        </member>
+        <member name="F:Techies.Modules.RemoteMines.Notification.keyText">
+            <summary>
+                The key text.
+            </summary>
+        </member>
+        <member name="F:Techies.Modules.RemoteMines.Notification.moveCameraText">
+            <summary>
+                The move camera text.
+            </summary>
+        </member>
+        <member name="F:Techies.Modules.RemoteMines.Notification.positionOff">
+            <summary>
+                The position off.
+            </summary>
+        </member>
+        <member name="F:Techies.Modules.RemoteMines.Notification.positionOn">
+            <summary>
+                The position on.
+            </summary>
+        </member>
+        <member name="F:Techies.Modules.RemoteMines.Notification.transition">
+            <summary>
+                The transition.
+            </summary>
+        </member>
+        <member name="F:Techies.Modules.RemoteMines.Notification.heroIconPosition">
+            <summary>
+                The hero icon position.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.Notification.#ctor(System.Single,SharpDX.Vector2,SharpDX.Vector2)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Techies.Modules.RemoteMines.Notification" /> class.
+            </summary>
+            <param name="duration">
+                The duration.
+            </param>
+            <param name="position">
+                The position.
+            </param>
+            <param name="size">
+                The size.
+            </param>
+        </member>
+        <member name="P:Techies.Modules.RemoteMines.Notification.DisplayTime">
+            <summary>
+                Gets the display time.
+            </summary>
+        </member>
+        <member name="P:Techies.Modules.RemoteMines.Notification.Duration">
+            <summary>
+                Gets or sets the duration.
+            </summary>
+        </member>
+        <member name="P:Techies.Modules.RemoteMines.Notification.Hero">
+            <summary>
+                Gets or sets the hero.
+            </summary>
+        </member>
+        <member name="P:Techies.Modules.RemoteMines.Notification.HeroIconSize">
+            <summary>
+                Gets or sets the hero icon size.
+            </summary>
+        </member>
+        <member name="P:Techies.Modules.RemoteMines.Notification.Hide">
+            <summary>
+                Gets or sets a value indicating whether hide.
+            </summary>
+        </member>
+        <member name="P:Techies.Modules.RemoteMines.Notification.IsHidden">
+            <summary>
+                Gets or sets a value indicating whether is hidden.
+            </summary>
+        </member>
+        <member name="P:Techies.Modules.RemoteMines.Notification.Position">
+            <summary>
+                Gets or sets the position.
+            </summary>
+        </member>
+        <member name="P:Techies.Modules.RemoteMines.Notification.RemoteMines">
+            <summary>
+                Gets or sets the stack.
+            </summary>
+        </member>
+        <member name="P:Techies.Modules.RemoteMines.Notification.Size">
+            <summary>
+                Gets or sets the size.
+            </summary>
+        </member>
+        <member name="P:Techies.Modules.RemoteMines.Notification.StartTime">
+            <summary>
+                Gets or sets the start time.
+            </summary>
+        </member>
+        <member name="P:Techies.Modules.RemoteMines.Notification.Visible">
+            <summary>
+                Gets or sets a value indicating whether draw.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.Notification.Click(SharpDX.Vector2)">
+            <summary>
+                The click.
+            </summary>
+            <param name="mousePosition">
+                The mouse position.
+            </param>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.Notification.Draw">
+            <summary>
+                The draw.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.Notification.MoveCameraAndDetonate">
+            <summary>
+                The move camera and detonate.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.Notification.PopUp(Ensage.Unit)">
+            <summary>
+                The pop up.
+            </summary>
+            <param name="hero">
+                The hero.
+            </param>
+        </member>
+        <member name="T:Techies.Modules.RemoteMines.ManageRemoteMines">
+            <summary>
+                The find remote mines.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.ManageRemoteMines.CanBeExecuted">
+            <summary>
+                The can be executed.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.ManageRemoteMines.CanDraw">
+            <summary>
+                The can draw.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.ManageRemoteMines.Draw">
+            <summary>
+                The draw.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.ManageRemoteMines.Execute(Ensage.Hero)">
+            <summary>
+                The execute.
+            </summary>
+            <param name="hero">
+                The hero.
+            </param>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.ManageRemoteMines.IsHeroLoop">
+            <summary>
+                The is hero loop.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.ManageRemoteMines.OnClose">
+            <summary>
+                The on close.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.ManageRemoteMines.OnLoad">
+            <summary>
+                The on load.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.ManageRemoteMines.OnWndProc(Ensage.WndEventArgs)">
+            <summary>
+                The on wnd proc.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.ManageRemoteMines.ObjectMgr_OnAddEntity(Ensage.EntityEventArgs)">
+            <summary>
+                The object manager on add entity.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="M:Techies.Modules.RemoteMines.ManageRemoteMines.ObjectMgr_OnRemoveEntity(Ensage.EntityEventArgs)">
+            <summary>
+                The object manager on remove entity.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="T:Techies.Modules.ForceStaff.AutoForceStaff">
+            <summary>
+                The auto force staff.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.ForceStaff.AutoForceStaff.CanBeExecuted">
+            <summary>
+                The can be executed.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.ForceStaff.AutoForceStaff.CanDraw">
+            <summary>
+                The can draw.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.ForceStaff.AutoForceStaff.Draw">
+            <summary>
+                The draw.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.ForceStaff.AutoForceStaff.Execute(Ensage.Hero)">
+            <summary>
+                The execute.
+            </summary>
+            <param name="hero">
+                The hero.
+            </param>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.ForceStaff.AutoForceStaff.IsHeroLoop">
+            <summary>
+                The is hero loop.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.ForceStaff.AutoForceStaff.OnClose">
+            <summary>
+                The on close.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.ForceStaff.AutoForceStaff.OnLoad">
+            <summary>
+                The on load.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.ForceStaff.AutoForceStaff.OnWndProc(Ensage.WndEventArgs)">
+            <summary>
+                The on wnd proc.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="T:Techies.Modules.StatisTraps.ManageStasisTraps">
+            <summary>
+                The manage statis traps.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.StatisTraps.ManageStasisTraps.CanBeExecuted">
+            <summary>
+                The can be executed.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.StatisTraps.ManageStasisTraps.CanDraw">
+            <summary>
+                The can draw.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.StatisTraps.ManageStasisTraps.Draw">
+            <summary>
+                The draw.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.StatisTraps.ManageStasisTraps.Execute(Ensage.Hero)">
+            <summary>
+                The execute.
+            </summary>
+            <param name="hero">
+                The hero.
+            </param>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.StatisTraps.ManageStasisTraps.IsHeroLoop">
+            <summary>
+                The is hero loop.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.StatisTraps.ManageStasisTraps.OnClose">
+            <summary>
+                The on close.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.StatisTraps.ManageStasisTraps.OnLoad">
+            <summary>
+                The on load.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.StatisTraps.ManageStasisTraps.OnWndProc(Ensage.WndEventArgs)">
+            <summary>
+                The on wnd proc.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="M:Techies.Modules.StatisTraps.ManageStasisTraps.ObjectMgr_OnAddEntity(Ensage.EntityEventArgs)">
+            <summary>
+                The object manager on add entity.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="M:Techies.Modules.StatisTraps.ManageStasisTraps.ObjectMgr_OnRemoveEntity(Ensage.EntityEventArgs)">
+            <summary>
+                The object manager on remove entity.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="T:Techies.Modules.SuicideSquadAttack.AutoSuicide">
+            <summary>
+                The auto suicide.
+            </summary>
+        </member>
+        <member name="P:Techies.Modules.SuicideSquadAttack.AutoSuicide.SuicideRadius">
+            <summary>
+                Gets or sets the suicide radius.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.SuicideSquadAttack.AutoSuicide.CanBeExecuted">
+            <summary>
+                The can be executed.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.SuicideSquadAttack.AutoSuicide.CanDraw">
+            <summary>
+                The can draw.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.SuicideSquadAttack.AutoSuicide.Draw">
+            <summary>
+                The draw.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.SuicideSquadAttack.AutoSuicide.Execute(Ensage.Hero)">
+            <summary>
+                The execute.
+            </summary>
+            <param name="hero">
+                The hero.
+            </param>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.SuicideSquadAttack.AutoSuicide.IsHeroLoop">
+            <summary>
+                The is hero loop.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.SuicideSquadAttack.AutoSuicide.OnClose">
+            <summary>
+                The on close.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.SuicideSquadAttack.AutoSuicide.OnLoad">
+            <summary>
+                The on load.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.SuicideSquadAttack.AutoSuicide.OnWndProc(Ensage.WndEventArgs)">
+            <summary>
+                The on wnd proc.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="T:Techies.Modules.ITechiesModule">
+            <summary>
+                The TechiesModule interface.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.ITechiesModule.CanBeExecuted">
+            <summary>
+                The can be executed.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.ITechiesModule.CanDraw">
+            <summary>
+                The can draw.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.ITechiesModule.Draw">
+            <summary>
+                The draw.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.ITechiesModule.Execute(Ensage.Hero)">
+            <summary>
+                The execute.
+            </summary>
+            <param name="hero">
+                The hero.
+            </param>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.ITechiesModule.IsHeroLoop">
+            <summary>
+                The is hero loop.
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Modules.ITechiesModule.OnClose">
+            <summary>
+                The on close.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.ITechiesModule.OnLoad">
+            <summary>
+                The on load.
+            </summary>
+        </member>
+        <member name="M:Techies.Modules.ITechiesModule.OnWndProc(Ensage.WndEventArgs)">
+            <summary>
+                The on wnd proc.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="T:Techies.Program">
+            <summary>
+                The program.
+            </summary>
+        </member>
+        <member name="M:Techies.Program.Events_OnClose(System.Object,System.EventArgs)">
+            <summary>
+                The event on close.
+            </summary>
+            <param name="sender">
+                The sender.
+            </param>
+            <param name="e">
+                The e.
+            </param>
+        </member>
+        <member name="M:Techies.Program.Events_OnLoad(System.Object,System.EventArgs)">
+            <summary>
+                The events on load.
+            </summary>
+            <param name="sender">
+                The sender.
+            </param>
+            <param name="e">
+                The e.
+            </param>
+        </member>
+        <member name="M:Techies.Program.Main">
+            <summary>
+                The main.
+            </summary>
+        </member>
+        <member name="T:Techies.Techies">
+            <summary>
+                The techies.
+            </summary>
+        </member>
+        <member name="F:Techies.Techies.EnabledHeroes">
+            <summary>
+                The enabled heroes.
+            </summary>
+        </member>
+        <member name="F:Techies.Techies.heroTopPanel">
+            <summary>
+                The hero top panel.
+            </summary>
+        </member>
+        <member name="M:Techies.Techies.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:Techies.Techies" /> class.
+            </summary>
+        </member>
+        <member name="M:Techies.Techies.Drawing_OnDraw(System.EventArgs)">
+            <summary>
+                The drawing_ on draw.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="M:Techies.Techies.Game_OnUpdate(System.EventArgs)">
+            <summary>
+                The game_ on update.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="M:Techies.Techies.Game_OnWndProc(Ensage.WndEventArgs)">
+            <summary>
+                The On Window Procedure Event
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="T:Techies.Utility.Damage">
+            <summary>
+                The damage.
+            </summary>
+        </member>
+        <member name="F:Techies.Utility.Damage.landMineDamageDictionary">
+            <summary>
+                The land mine damage dictionary.
+            </summary>
+        </member>
+        <member name="F:Techies.Utility.Damage.remoteMineDamageDictionary">
+            <summary>
+                The remote mine damage dictionary.
+            </summary>
+        </member>
+        <member name="F:Techies.Utility.Damage.suicideDamageDictionary">
+            <summary>
+                The suicide damage dictionary.
+            </summary>
+        </member>
+        <member name="M:Techies.Utility.Damage.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:Techies.Utility.Damage" /> class.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.Damage.CurrentLandMineDamage">
+            <summary>
+                Gets or sets the current land mine damage.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.Damage.CurrentRemoteMineDamage">
+            <summary>
+                Gets or sets the current remote mine damage.
+            </summary>
+        </member>
+        <member name="M:Techies.Utility.Damage.GetLandMineDamage(System.UInt32,System.UInt32)">
+            <summary>
+                The get land mine damage.
+            </summary>
+            <param name="level">
+                The level.
+            </param>
+            <param name="handle">
+                The handle.
+            </param>
+            <returns>
+                The <see cref="T:System.Single" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Utility.Damage.GetRemoteMineDamage(System.UInt32,System.UInt32,Ensage.Unit)">
+            <summary>
+                The get remote mine damage.
+            </summary>
+            <param name="level">
+                The level.
+            </param>
+            <param name="handle">
+                The handle.
+            </param>
+            <param name="creep">
+                The creep.
+            </param>
+            <returns>
+                The <see cref="T:System.Single" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Utility.Damage.GetSuicideDamage">
+            <summary>
+                The get suicide damage.
+            </summary>
+            <returns>
+                The <see cref="!:Dictionary" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Utility.Damage.OnClose">
+            <summary>
+                The on close.
+            </summary>
+        </member>
+        <member name="M:Techies.Utility.Damage.OnLoad">
+            <summary>
+                The on load.
+            </summary>
+        </member>
+        <member name="M:Techies.Utility.Damage.Game_OnUpdate(System.EventArgs)">
+            <summary>
+                The game_ on update.
+            </summary>
+            <param name="args">
+                The args.
+            </param>
+        </member>
+        <member name="T:Techies.Utility.DrawingUtils">
+            <summary>
+                The drawing utils.
+            </summary>
+        </member>
+        <member name="M:Techies.Utility.DrawingUtils.DrawLandMineNumber(System.UInt32,System.Single,System.Double,System.Double,System.Boolean,Ensage.Hero)">
+            <summary>
+                The draw land mine number.
+            </summary>
+            <param name="handle">
+                The handle.
+            </param>
+            <param name="health">
+                The health.
+            </param>
+            <param name="x">
+                The x.
+            </param>
+            <param name="sizey">
+                The size y.
+            </param>
+            <param name="enabled">
+                The enabled.
+            </param>
+            <param name="hero">
+                The hero.
+            </param>
+        </member>
+        <member name="M:Techies.Utility.DrawingUtils.DrawRemoteMineNumber(System.UInt32,System.Single,System.Double,System.Double,System.Double,System.Boolean,Ensage.Hero)">
+            <summary>
+                The draw remote mine number.
+            </summary>
+            <param name="handle">
+                The handle.
+            </param>
+            <param name="health">
+                The health.
+            </param>
+            <param name="x">
+                The x.
+            </param>
+            <param name="sizeX">
+                The size x.
+            </param>
+            <param name="sizey">
+                The size y.
+            </param>
+            <param name="enabled">
+                The enabled.
+            </param>
+            <param name="hero">
+                The hero.
+            </param>
+        </member>
+        <member name="M:Techies.Utility.DrawingUtils.DrawSuicide(System.UInt32,System.Single,System.Double,System.Double,System.Double,System.Boolean,Ensage.Unit)">
+            <summary>
+                The draw suicide.
+            </summary>
+            <param name="handle">
+                The handle.
+            </param>
+            <param name="health">
+                The health.
+            </param>
+            <param name="x">
+                The x.
+            </param>
+            <param name="sizey">
+                The size y.
+            </param>
+            <param name="sizeX">
+                The size x.
+            </param>
+            <param name="enabled">
+                The enabled.
+            </param>
+            <param name="hero">
+                The hero.
+            </param>
+        </member>
+        <member name="M:Techies.Utility.DrawingUtils.RoundedRectangle(System.Single,System.Single,System.Single,System.Single,System.Int32,SharpDX.Color)">
+            <summary>
+                The rounded rectangle.
+            </summary>
+            <param name="x">
+                The x.
+            </param>
+            <param name="y">
+                The y.
+            </param>
+            <param name="w">
+                The w.
+            </param>
+            <param name="h">
+                The h.
+            </param>
+            <param name="iSmooth">
+                The i smooth.
+            </param>
+            <param name="color">
+                The color.
+            </param>
+        </member>
+        <member name="T:Techies.Utility.Extensions">
+            <summary>
+                The extensions.
+            </summary>
+        </member>
+        <member name="M:Techies.Utility.Extensions.GetStackDamage(Ensage.Unit,System.Single)">
+            <summary>
+                The get stack damage.
+            </summary>
+            <param name="hero">
+                The hero.
+            </param>
+            <param name="inFrontDistance">
+                The in front distance.
+            </param>
+            <returns>
+                The <see cref="T:System.Tuple" />.
+            </returns>
+        </member>
+        <member name="M:Techies.Utility.Extensions.PredictedPosition(Ensage.Unit,System.Double)">
+            <summary>
+                The predicted position.
+            </summary>
+            <param name="unit">
+                The unit.
+            </param>
+            <param name="bonusDelay">
+                The bonus delay.
+            </param>
+            <returns>
+                The <see cref="T:SharpDX.Vector3" />.
+            </returns>
+        </member>
+        <member name="T:Techies.Utility.TechiesMenu">
+            <summary>
+                The techies menu.
+            </summary>
+        </member>
+        <member name="M:Techies.Utility.TechiesMenu.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:Techies.Utility.TechiesMenu" /> class.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.TechiesMenu.DetonationMenu">
+            <summary>
+                Gets or sets the detonation menu.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.TechiesMenu.DrawingsMenu">
+            <summary>
+                Gets or sets the drawings menu.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.TechiesMenu.ForceStaffMenu">
+            <summary>
+                Gets or sets the force staff menu.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.TechiesMenu.MainMenu">
+            <summary>
+                Gets or sets the main menu.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.TechiesMenu.SuicideMenu">
+            <summary>
+                Gets or sets the suicide menu.
+            </summary>
+        </member>
+        <member name="M:Techies.Utility.TechiesMenu.LandMines_OnValueChanged(System.Object,Ensage.Common.Menu.OnValueChangeEventArgs)">
+            <summary>
+                The land mines_ on value changed.
+            </summary>
+            <param name="sender">
+                The sender.
+            </param>
+            <param name="onValueChangeEventArgs">
+                The on value change event args.
+            </param>
+        </member>
+        <member name="M:Techies.Utility.TechiesMenu.RemoteMines_OnValueChanged(System.Object,Ensage.Common.Menu.OnValueChangeEventArgs)">
+            <summary>
+                The remote mines_ on value changed.
+            </summary>
+            <param name="sender">
+                The sender.
+            </param>
+            <param name="onValueChangeEventArgs">
+                The on value change event args.
+            </param>
+        </member>
+        <member name="M:Techies.Utility.TechiesMenu.StasisTraps_OnValueChanged(System.Object,Ensage.Common.Menu.OnValueChangeEventArgs)">
+            <summary>
+                The stasis traps_ on value changed.
+            </summary>
+            <param name="sender">
+                The sender.
+            </param>
+            <param name="onValueChangeEventArgs">
+                The on value change event args.
+            </param>
+        </member>
+        <member name="T:Techies.Utility.Variables">
+            <summary>
+                The variables.
+            </summary>
+        </member>
+        <member name="F:Techies.Utility.Variables.Modules">
+            <summary>
+                The modules.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.Variables.Damage">
+            <summary>
+                Gets or sets the damage.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.Variables.EnemyTeam">
+            <summary>
+                Gets or sets the enemy team.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.Variables.ForceStaff">
+            <summary>
+                Gets or sets the force staff.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.Variables.Instance">
+            <summary>
+                Gets or sets the instance.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.Variables.LandMines">
+            <summary>
+                Gets or sets the land mines.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.Variables.LandMinesAbility">
+            <summary>
+                Gets or sets the land mines ability.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.Variables.Menu">
+            <summary>
+                Gets or sets the menu.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.Variables.RemoteMines">
+            <summary>
+                Gets or sets the remote mines.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.Variables.RemoteMinesAbility">
+            <summary>
+                Gets or sets the remote mines ability.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.Variables.Stacks">
+            <summary>
+                Gets or sets the stacks.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.Variables.StasisTrapAbility">
+            <summary>
+                Gets or sets the stasis trap ability.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.Variables.StasisTraps">
+            <summary>
+                Gets or sets the stasis traps.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.Variables.SuicideAbility">
+            <summary>
+                Gets or sets the suicide ability.
+            </summary>
+        </member>
+        <member name="P:Techies.Utility.Variables.Techies">
+            <summary>
+                Gets or sets the techies.
+            </summary>
+        </member>
+    </members>
+</doc>
